@@ -22,30 +22,23 @@ The project is structured as follows:
 
 ## Installation
 
+1. Clone the repository:
+```
+git clone https://github.com/nihadshibilec/Auto-Strategy.git
+```
 Install dependencies:
+```
 pip install -r requirements.txt
+```
 
-To run the backtesting system, execute the Main.py script:
-python Main.py
-
+To run the backtesting system, execute the main.py script:
+```
+python main.py
+```
 The script will generate backtest reports and forward test results.
 
-**Contributing**
-Contributions are welcome! If you'd like to contribute to this project, please follow these steps:
+### Contributing
+Contributions are welcome! Feel free to submit pull requests or open issues.
+### License
+This project is licensed under the MIT License.
 
-Fork the repository.
-Create a new branch (git checkout -b feature-new-feature).
-Make your changes.
-Commit your changes (git commit -am 'Add new feature').
-Push to the branch (git push origin feature-new-feature).
-Create a new Pull Request.
-Project Contributors
-Your Name
-Collaborator Name
-
-License
-This project is licensed under the MIT License. See the LICENSE file for details.
-
-1. Clone the repository:
-```bash
-git clone https://github.com/nihadshibilec/Auto-Strategy.git
