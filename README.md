@@ -48,5 +48,4 @@ This project is licensed under the MIT License. See the LICENSE file for details
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/your_username/trading-strategy-backtesting.git
-cd trading-strategy-backtesting
+git clone https://github.com/nihadshibilec/Auto-Strategy.git
