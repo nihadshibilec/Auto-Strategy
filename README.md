@@ -2,6 +2,7 @@
 # Auto Strategy Picker
 
 Welcome to the Auto Strategy Picker! This project implements a backtesting system for trading strategies using Python. It backtest the combination of provided features and provide you with best possible combination of features to use.
+![Code Flow](https://github.com/nihadshibilec/Auto-Strategy/assets/108345955/5cc74cf0-3c47-417f-80a4-c430d73cdbc3)
 
 ## Features
 
