@@ -1,19 +1,10 @@
-import os
-current_directory = os.getcwd()
 import pandas as pd
-import datetime as dt
-import sys
 from itertools import product
-from tqdm import tqdm
-sys.path.append(current_directory + r"\Entry_Strategy")
-sys.path.append(current_directory + r"\Features")
-sys.path.append(current_directory + r"\Functions")
-import datetime as dt
 
-from Entry_Strategy.RSIUpper import get_rsi_upper_entries
-from Functions.ExitOptimizer import exit_optimizer
-from Functions.Exit_Cases import ExitCaseAnalyzer
-from Features.FeaturesModule import add_volume_shocker,add_volatility_pct,add_macd_upper
+from Entry_Strategy import get_rsi_upper_entries
+from ExitOptimizer import exit_optimizer
+from Exit_Cases import ExitCaseAnalyzer
+from FeaturesModule import add_volume_shocker,add_volatility_pct,add_macd_upper
 
 class AutoStrategy:
     def __init__(self, market_data,forward_test_market_data):
@@ -125,8 +116,8 @@ class AutoStrategy:
         return df
 
 # Sample
-market_data = pd.read_csv(current_directory+r"\Market_Data\Reliance.csv")
-forward_market_data = pd.read_csv(current_directory+r"\Market_Data\Reliance_Forward.csv")
+market_data = pd.read_csv("Reliance.csv")
+forward_market_data = pd.read_csv("Reliance_Forward.csv")
 RSI_Strategy = AutoStrategy(market_data,forward_market_data)
 backtest_report, foward_report = RSI_Strategy.run_engine()
 print(backtest_report)
